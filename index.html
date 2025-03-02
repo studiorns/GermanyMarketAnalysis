@@ -568,31 +568,6 @@
             box-shadow: 0 6px 16px rgba(26, 115, 232, 0.5);
         }
         
-        .export-btn {
-            position: fixed;
-            bottom: 30px;
-            right: 100px;
-            background-color: var(--card-bg);
-            color: var(--primary);
-            border: 2px solid var(--primary);
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            font-size: 22px;
-            cursor: pointer;
-            box-shadow: var(--shadow);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: var(--transition);
-            z-index: 1000;
-        }
-        
-        .export-btn:hover {
-            background-color: var(--primary-light);
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-md);
-        }
         
         @media (max-width: 768px) {
             .metrics-grid, .data-grid {
@@ -615,19 +590,12 @@
                 border-radius: 0;
             }
             
-            .print-btn, .export-btn {
+            .print-btn {
                 bottom: 20px;
                 width: 50px;
                 height: 50px;
                 font-size: 20px;
-            }
-            
-            .print-btn {
                 right: 20px;
-            }
-            
-            .export-btn {
-                right: 80px;
             }
             
             .data-card {
@@ -697,7 +665,7 @@
                 break-inside: avoid;
             }
             
-            .print-btn, .export-btn {
+            .print-btn {
                 display: none;
             }
             
@@ -976,7 +944,6 @@
     </div>
     
     <button class="print-btn" title="Print Dashboard"><i class="fas fa-print"></i></button>
-    <button class="export-btn" title="Export Data"><i class="fas fa-file-export"></i></button>
     
     <footer style="background-color: var(--gray-100); padding: 20px 0; text-align: center; margin-top: 40px; border-top: 1px solid var(--gray-300);">
         <div class="container">
